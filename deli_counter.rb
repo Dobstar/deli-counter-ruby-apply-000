@@ -1,3 +1,4 @@
+$counter = 0 
 katz_deli = []
 
 #put two arguments- array and name to be used in the method. using the .push method so that new customers can join the end of the queue (pushing name onto the array/queue). 
@@ -8,6 +9,7 @@ def take_a_number(array, name)
   array.push(name)
   array.each_with_index do |name,index|
     indexplusone = index +1 
+    counter += counter + 1
     puts "Welcome, #{name}. You are number #{indexplusone} in line"
     return name, indexplusone
   end
